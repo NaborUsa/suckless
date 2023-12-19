@@ -1,0 +1,206 @@
+#####################
+# Application keybindings #
+#####################
+
+# MOD 1 : alt
+# Mod 4 : super or windows key
+
+# NOTES:
+# super key for 64 bits
+# alt for 32 bits
+
+# Original in DWM :
+#   MODKEY 1 = alt
+#   { MODKEY|ShiftMask,             XK_Return,     spawn,                  {.v = termcmd } },
+#	{ MODKEY,                       XK_b,          togglebar,              {0} },
+#	{ MODKEY,                       XK_j,          focusstack,             {.i = +1 } },
+#	{ MODKEY,                       XK_k,          focusstack,             {.i = -1 } },
+#	{ MODKEY,                       XK_i,          incnmaster,             {.i = +1 } },
+#	{ MODKEY,                       XK_d,          incnmaster,             {.i = -1 } },
+#	{ MODKEY,                       XK_h,          setmfact,               {.f = -0.05} },
+#	{ MODKEY,                       XK_l,          setmfact,               {.f = +0.05} },
+#	{ MODKEY,                       XK_Return,     zoom,                   {0} },
+#	{ MODKEY,                       XK_Tab,        view,                   {0} },
+#	{ MODKEY|ShiftMask,             XK_c,          killclient,             {0} },
+#	{ MODKEY|ShiftMask,             XK_q,          quit,                   {0} },
+#	{ MODKEY,                       XK_t,          setlayout,              {.v = &layouts[0]} },
+#	{ MODKEY,                       XK_f,          setlayout,              {.v = &layouts[1]} },
+#	{ MODKEY,                       XK_m,          setlayout,              {.v = &layouts[2]} },
+#	{ MODKEY, ??????????                      XK_c,          setlayout,              {.v = &layouts[3]} },
+#	{ MODKEY,  ?????                     XK_space,      setlayout,              {0} },
+#	{ MODKEY|ShiftMask,    ??????         XK_space,      togglefloating,         {0} },
+#	{ MODKEY,                ???       XK_grave,      togglescratch,          {.v = scratchpadcmd } },
+#	{ MODKEY|ControlMask,     ???      XK_grave,      setscratch,             {.v = scratchpadcmd } },
+#	{ MODKEY|ShiftMask,     ???        XK_grave,      removescratch,          {.v = scratchpadcmd } },
+#	{ MODKEY|ShiftMask,      ??       XK_s,          togglesticky,           {0} },
+#	{ MODKEY|ShiftMask,   ??????          XK_0,          tag,                    {.ui = ~0 } },
+#	{ MODKEY,                       XK_comma,      focusmon,               {.i = -1 } },
+#	{ MODKEY,                       XK_period,     focusmon,               {.i = +1 } },
+#	{ MODKEY|ShiftMask,             XK_comma,      tagmon,                 {.i = -1 } },
+#	{ MODKEY|ShiftMask,             XK_period,     tagmon,                 {.i = +1 } },
+#	{ MODKEY|ControlMask,           XK_comma,      cyclelayout,            {.i = -1 } },
+#	{ MODKEY|ControlMask,           XK_period,     cyclelayout,            {.i = +1 } },
+#	TAGKEYS(                        XK_1,                                  0)
+#	TAGKEYS(                        XK_2,                                  1)
+#	TAGKEYS(                        XK_3,                                  2)
+#	TAGKEYS(                        XK_4,                                  3)
+#	TAGKEYS(                        XK_5,                                  4)
+#	TAGKEYS(                        XK_6,                                  5)
+#	TAGKEYS(                        XK_7,                                  6)
+#	TAGKEYS(                        XK_8,                                  7)
+#	TAGKEYS(                        XK_9,                                  8)
+#};
+
+########################################################################
+
+# Termnal  
+# (alacritty terminator tilex st terminology hyper Rxvt-unicode Extraterm 
+#  xfce-terminal kitty konsole wezterm urxvt)
+
+control + alt + Return
+    st
+    
+alt + x    
+    xfce4-terminal
+    
+# File Manager (ranger nnn fff dolphin    nemo
+control + shift + n
+    thunar
+	
+# Internet
+	
+alt + shift + f
+    firefox	
+    
+super + Shift + g
+    google
+    
+super + Shift + e
+    thunderbird
+    
+#    okular
+	
+#calibre – ebook manager.
+
+#
+
+
+
+
+
+
+devede – A simple application to create Video DVDs	
+	
+	
+# Video managers	
+
+super + Shift + v
+	mpv
+	
+#	vlc
+	
+# Music Players
+#   https://www.reallinuxuser.com/a-yearly-review-my-40-most-favorite-apps-for-linux-for-2023/
+#   https://johnfactotum.github.io/foliate/
+#    vim
+#    sublime
+#    okular
+
+#   moc
+#    cmus
+
+#    googler
+#    neofetch
+#    wttr
+#   stacer
+#   bleachbit
+#    keepassxc
+#   tux paint
+#  conky
+#    transmission
+#    onlyoffice  
+  
+
+
+
+
+    
+    
+
+########################################################################
+
+
+
+########################################################################
+########################################################################
+# rofi launchers
+alt 
+  	rofi -modi drun -show drun -line padding 4 -hide-scrollbar -show-icons
+   	
+#alt + shift + z
+	rofi -modi drun -show drun -line padding 4 -hide-scrollbar -show-icons
+	
+# rofi network manager	
+control + n
+	bash ~/bin/rofi-network-manager
+
+# logout, shutdown, reboot
+super + x
+	~/bin/power
+	
+# help with shortcuts
+#super + h
+#	~/bin/dwm-key
+# make sxhkd reload its configuration files:
+
+super + Escape
+	pkill -USR1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
+# application launchers
+
+
+
+#alt + control + z
+#	geany
+
+#super + g
+#	gimp
+	
+#super + c
+#	google-chrome
+	
+#super + d
+#	Discord
+
+#super + o
+#	obs
+
+#super + t
+#	~/bin/time_date
+	
+	
+
+
+
+
+
+
+## Show clipmenu
+alt + v
+    CM_LAUNCHER=rofi clipmenu 
+    
+    
+    
+#   stacer
+# kdenlive
+# handbrake
+#soundconverter
+# timeshift
+#bacula
+#audacity0
+#https://www.shotcut.org/
+#https://www.clamav.net/
+#brave
+# https://www.producthunt.com/products/todoist
+#https://www.producthunt.com/products/photopea
+
+ 
